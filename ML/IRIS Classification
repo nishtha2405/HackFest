@@ -1,0 +1,16 @@
+
+from sklearn import datasets
+from sklearn.neighbors import KNeighborsClassifier
+
+#LOADING DATASETS
+iris=datasets.load_iris()
+features=iris.data #DEPENDENT VARIABLE
+labels=iris.target # INDEPENDENT VARIABLE
+#print(features[0],labels[0])
+#print(iris.DESCR)
+
+#TRAINING THE CLASSIFIER
+clf=KNeighborsClassifier()
+clf.fit(features,labels)
+pred=clf.predict([[1,2,34,8]])
+print(pred)
