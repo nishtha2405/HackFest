@@ -1,0 +1,30 @@
+from sklearn import datasets
+from sklearn.linear_model import LogisticRegression
+import numpy as np
+import matplotlib.pyplot as plt
+
+iris=datasets.load_iris()
+
+#print(list(iris.keys()))
+#print(iris['data'].shape)
+#print(iris['target'])
+#print(iris['DESCR'])
+
+x=iris["data"][:,3:] # selecting only one feature i.e. last feature
+y=(iris["target"] == 2).astype(np.int) # selecting only that dataset that falls under veronica category
+                                        # also we want only 2 to be represented as True and rest all as false hence
+                                        # used astype attribute
+
+#Train a logistic regresiion classifier
+clf=LogisticRegression()
+clf.fit(x,y)
+example=clf.predict(([[2.6]]))
+print(example)
+
+#Usine matplotlib to plot the visualization
+x_new=np.linspace(0,3,1000).reshape(-1,1) #we are dividing valued btw 0 and 3into 1000 intervals and 
+                                            #reshaping into a numpy array
+y_prob=clf.predict_proba(x_new) #converting our probability btw the range 0 to 1 ; predicting the threshold value
+print(y_prob)
+plt.plot(x_new,y_prob[:,1],"r-",label="virginica")
+plt.show()
