@@ -1,2 +1,2 @@
-Contribute code for good here
+Contribute good coding questions and their solutions.
 
