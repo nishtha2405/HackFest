@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LOGIN</title>
+
+    <script src="https://kit.fontawesome.com/64f4ba1195.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            background-image: url('pj02/fast-food.jpg');
+            background-repeat: no-repeat;
+            background-size: 1280px 577px;
+        }
+
+        .sign {
+            font-family: 'Baloo Bhai', cursive;
+            display: flex;
+            justify-content: center;
+            font-size: 60px;
+        }
+
+        .container {
+            width: 305px;
+            height: 350px;
+            border: 4px solid red;
+            border-radius: 20px;
+            margin-left: 18%;
+            margin-top: 5%;
+            box-shadow: 120px 10px 160px red inset;
+        }
+
+        .names {
+            margin-left: 60px;
+            font-family: 'Baloo Bhai', cursive;
+            font-size: 30px;
+        }
+
+        .names1 {
+            margin-left: 100px;
+            cursor: pointer;
+        }
+
+        .names input {
+            border: none;
+            font-size: 15px;
+            height: 25px;
+            border-radius: 30px;
+            border: 2px solid black;
+        }
+
+        .names1 input {
+            font-size: 18px;
+            height: 45px;
+            border-radius: 90px;
+            border: none;
+            border: 2px solid black;
+            padding: 12px;
+        }
+
+        .names1 :hover {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        .mem {
+            margin-left: 52px;
+            font-size: 18px;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        a:link {
+            color: rgb(56, 235, 174);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="backend.php">
+        <div class="container">
+
+            <div class="sign">LOGIN</div>
+
+            <div class="names">
+                <input type="email" name="myemail" placeholder="&nbsp &nbsp ENTER USERNAME">
+            </div>
+
+            <div class="names">
+                <input type="password" name="mypassword" placeholder="&nbsp &nbsp ENTER PASSWORD">
+            </div>
+
+            <br>
+            <br>
+
+            <div class="names1">
+                <input type="submit" value="LOGIN">
+            </div>
+            <br>
+            <div class="mem">New Here?
+                <a href="signup.html" target="_blank">SIGN UP</a>
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>
