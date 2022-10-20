@@ -1,0 +1,35 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+"""## Importing the dataset"""
+
+df=pd.read_csv("Position_Salaries.csv")
+x=df.iloc[:,1:-1].values
+y=df.iloc[:,-1].values
+
+print(x)
+
+print(y)
+
+"""## Training the Decision Tree Regression model on the whole dataset"""
+
+from sklearn.tree import DecisionTreeRegressor
+regressor=DecisionTreeRegressor(random_state=0)
+regressor.fit(x,y)
+
+"""## Predicting a new result"""
+
+regressor.predict([[6.5]])
+
+"""## Visualising the Decision Tree Regression results (higher resolution)"""
+
+x_grid=np.arange(min(x),max(x),0.1)
+x_grid=x_grid.reshape(len(x_grid),1)
+plt.scatter(x,y,color="red")
+plt.plot(x_grid,regressor.predict(x_grid),color="blue")
+plt.title("Truth or Bluff(DecTree)")
+plt.xlabel("Position")
+plt.ylabel("Salary")
+plt.show()
+
