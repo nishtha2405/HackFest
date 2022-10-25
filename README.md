@@ -45,5 +45,5 @@ git clone https://github.com/<Your_Username>/HackFest.git
 
 -----
 
-#### You have successfully submitted your first PR, Repeat the steps for submitting 3 more!!
- **Note:** "Please Don't make any changes to README.MD or submit any spam pull request
+#### You have successfully submitted your first PR, Repeat the steps for submitting 3 more.
+ **Note:** "Please Don't make any changes to README.MD or submit any spam pull request.
