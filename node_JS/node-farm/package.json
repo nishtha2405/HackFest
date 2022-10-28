@@ -1,0 +1,19 @@
+{
+  "name": "node-farm",
+  "version": "1.0.0",
+  "description": "Learning Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
+  },
+  "author": "Pranav",
+  "license": "ISC",
+  "dependencies": {
+    "slugify": "^1.6.5",
+    "nodemon": "^2.0.16"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
