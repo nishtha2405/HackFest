@@ -18,7 +18,7 @@ Hacktoberfest, in its 8th year, is a month-long celebration of open source softw
 * Mentor others
 * Donate directly to open source projects
 <br>
-### Why Contribute to hacktoberfest 2022 🙌
+### Why Contribute to hacktoberfest 2022 ?
 
 - Chance to contribute to awesome open source projects.
 - Polish you GitHub Skills.
@@ -32,7 +32,7 @@ You can add your projects, or any valid programs under any language. Just make s
 -----
 #### Instructions:
 * Time for your contribution! Follow the steps below:
-* Star The Repo :star2:
+* Star The Repo.
 * Fork the repository (Top right corner of this repo)
 * Clone the forked repository to your local machine.
 ```markdown
