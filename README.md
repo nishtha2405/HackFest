@@ -18,6 +18,7 @@ Hacktoberfest, in its 8th year, is a month-long celebration of open source softw
 * Mentor others
 * Donate directly to open source projects
 <br>
+
 ### Why Contribute to hacktoberfest 2022 ?
 
 - Chance to contribute to awesome open source projects.
